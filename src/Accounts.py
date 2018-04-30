@@ -26,8 +26,8 @@ class Accounts:
         return [a['user'] for a in self.Accounts]
     #def Users(self): return self.__accounts.keys()
     def Has(self, username): return username in self.Accounts
-    def SortUser(self, isReverse=False):
-        sorted(self.Accounts, key=lambda i: i['user'], reverse=isReverse)
+    def SortedUsers(self, isReverse=False):
+        return sorted(self.__accounts, key=lambda i: i['user'], reverse=isReverse)
     def GetEmail(self, user):
         for u in self.Accounts:
             if user == u['user']: return u['email']

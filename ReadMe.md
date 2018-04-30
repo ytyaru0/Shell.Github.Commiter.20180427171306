@@ -10,20 +10,11 @@ sqlite3とそのDBへの依存を解消してテキストファイル保存に�
 
 ## 準備
 
-```accounts.tsv
-Username,MailAddress,Password
-Username,MailAddress,Password
-Username,MailAddress,Password
+Accounts.tsv
 ```
-```accounts.tsv
-Username,MailAddress,Password,AccessToken
-Username,MailAddress,Password,AccessToken
-Username,MailAddress,Password,AccessToken
-```
-```accounts.tsv
-Username,MailAddress,AccessToken
-Username,MailAddress,AccessToken
-Username,MailAddress,AccessToken
+Username,MailAddress,Password
+Username,MailAddress,Password
+Username,MailAddress,Password
 ```
 
 ファイルから丸見えなのでセキュリティ的に危険。だが、簡単に編集できる。

@@ -19,8 +19,7 @@ if __name__ == '__main__':
     a = Accounts()
     if sys.argv[1] == 'exist' and 1 < len(sys.argv): print(a.Has(sys.argv[2]))
     elif sys.argv[1] == 'get' and sys.argv[2] == 'users':
-        a.SortUser()
-        for u in a.Users: print(u)
+        for u in a.SortedUsers(): print(u['user'])
     elif sys.argv[1] == 'get' and sys.argv[2] == 'email' and 3 < len(sys.argv): print(a.GetEmail(sys.argv[3]))
     elif sys.argv[1] == 'get' and sys.argv[2] == 'pass' and 3 < len(sys.argv): print(a.GetPass(sys.argv[3]))
     else: ErrorMessage();
